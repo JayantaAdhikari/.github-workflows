@@ -25,9 +25,9 @@ jobs:
 
       - name: Copy files to folder
         run: |
-          mkdir -p /tmp/my-folder
-          cp -r * /tmp/my-folder
+          mkdir -p /tmp/jayanta
+          cp -r * /tmp/jayanta
 
       - name: Verify
         run: |
-          ls -la /tmp/my-folder
+          ls -la /tmp/jayanta
