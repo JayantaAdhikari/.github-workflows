@@ -1,4 +1,4 @@
-name: Trigger on Develop Branch    #For test only
+name: Trigger on Develop Branch    
 
 on:
   push:
