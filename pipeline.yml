@@ -3,7 +3,7 @@ name: Trigger on Develop Branch  #edit
 on:
   push:
     branches:
-      - develop   # 1. Trigger on push to develop
+      - develop   # 1. Trigger on push to main
 
 jobs:
   build:
