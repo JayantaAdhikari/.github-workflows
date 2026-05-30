@@ -1,0 +1,33 @@
+name: Trigger on Develop Branch
+
+on:
+  push:
+    branches:
+      - develop   # 1. Trigger on push to develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+name: Trigger on Develop Branch
+
+on:
+  push:
+    branches:
+      - develop   # 1. Trigger on push to develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4   # 2. Pull Git content
+
+      - name: Copy files to folder
+        run: |
+          mkdir -p /tmp/jayanta
+          cp -r * /tmp/jayanta
+
+      - name: Verify
+        run: |
+          ls -la /tmp/jayanta
